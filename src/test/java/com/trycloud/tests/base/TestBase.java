@@ -21,6 +21,14 @@ public abstract class TestBase {
 
         public WebDriver driver;
 
+    // Story: As a user, I should be able to login.
+    //Test case #1 - verify user login successfully
+    //1. Navigate to login page http://qa.trycloud.net/index.php/login?clear=1
+    // 2. Enter valid username
+    //3. Enter valid password
+    //4. Click login button
+    //5. Verify the URL is changed to homepage’s url
+    // (Put this test case in testBase class with an annotation so it runs for all the test case)
         @BeforeMethod
         public void setUp(){
             driver = WebdriverFactory.getDriver("chrome");
