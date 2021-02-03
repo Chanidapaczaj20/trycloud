@@ -39,6 +39,10 @@ public class TryCloudUtils {
     }
     public static void verifyValidLoginUrl(WebDriver driver, String expectedUrl) {
         String actualUrl = "http://app.trycloud.net/index.php/apps/files/?dir=/&fileid=82309";
+        // "http://qa.trycloud.net/index.php/apps/files/?dir=/&fileid=3283"
+                //"http://qa.trycloud.net/index.php/apps/files/?dir=/&fileid=3283";
+                //"http://app.trycloud.net/index.php/apps/files/?dir=/&fileid=82309";
+
         Assert.assertEquals(expectedUrl, actualUrl);
     }
     public static void verifyInvalidLoginUrl(WebDriver driver, String expectedUrl) {

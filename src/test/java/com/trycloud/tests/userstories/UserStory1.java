@@ -1,5 +1,6 @@
 package com.trycloud.tests.userstories;
 
+import com.trycloud.utilities.TryCloudUtils;
 import com.trycloud.tests.base.TestBase;
 import org.testng.annotations.Test;
 
@@ -15,6 +16,9 @@ public class UserStory1 extends TestBase {
 
     @Test
     public void TestCase2() {
+        driver.get("http://qa.trycloud.net/index.php/login?clear=1");
+        TryCloudUtils.inValidLoginToTryCloud(driver);
+
     }
 
 
